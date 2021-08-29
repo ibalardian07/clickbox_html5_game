@@ -1,6 +1,7 @@
 # ✭ ClickBox HTML5 Games.
 
-This is a simple game I made using vanilla JavaScript. This is the result of my practice for this 2021 LKSN. Want to try? visit 
+This is a simple game I made using vanilla JavaScript. This is the result of my practice for this 2021 LKSN. Want to try?
+visit https://clickbox.ibalardian.xyz/ 
 
 ⇨ Screenshot
 
