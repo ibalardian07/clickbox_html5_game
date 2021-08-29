@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: #171717;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+.container {
+    display: block;
+    width: 100%;
+    padding: 0px 70px;
+    margin: 30px auto;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.game-row {
+    display: grid;
+    grid-template-areas: "game-box score-box";
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 20px;
+}
+.game-box {
+    grid-area: game-box;
+    border-radius: 4px;
+    background-color: #242424;
+    padding: 34px 30px;
+}
+.score-box {
+    grid-area: score-box;
+    border-radius: 4px;
+    background-color: #242424;
+    padding: 34px 30px;
+}
+.play-row {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-gap: 10px;
+}
+.play-box {
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    background-color: #499371;
+}
+.btn {
+    border: none;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-start {
+    margin: 0;
+}
+.btn-success {
+    background-color: #499371;
+    color: #ffffff;
+}
+.score-font {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+.score-count {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 20px 0px;
+    text-align: center;
+}
+.active {
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.game-author {
+    font-size: 16px;
+    color: #9b9b9b;
+    margin: 30px 0px;
+}
+.game-author a {
+    color: #ffffff;
+}
+/* Mobile Version */
+@media (max-width: 992px) {
+    .container {
+        display: block;
+        width: 100%;
+        padding: 0px 10px;
+        margin: 20px 0;
+    }
+    .game-row {
+        display: grid;
+        grid-template-areas: "game-box"
+        "score-box";
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0px;
+    }
+    .play-row {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+        grid-gap: 10px;
+    }
+}
